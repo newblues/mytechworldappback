@@ -42,6 +42,8 @@ router.post('/myprojects', function(req, res, next) {
   });
 
   newProject.save(function(error, project) {
+        console.log("bdd backend ------>", project);
+
     res.json({result: true, project});
   });
 });
